@@ -71,7 +71,7 @@ echo -e "\e[1m         Installing Dependencies"
 echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
 
-apt-get -y install libunwind8 gettext
+yay -S install libunwind8 gettext
 
 echo -e "\e[0m"
 echo -e "\e[1m----------------------------------------"

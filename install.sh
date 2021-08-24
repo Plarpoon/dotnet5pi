@@ -4,9 +4,9 @@ echo -e "\e[1m----------------------------------------"
 echo -e "\e[1m            .NET Installer"
 echo -e "\e[1m----------------------------------------"
 echo ""
-echo -e "\e[1mPete Codes / PJG Creations 2021"
+echo -e "\e[Plarpoon"
 echo ""
-echo -e "Latest update 04/01/2021"
+echo -e "Latest update 24/08/2021"
 echo ""
 
 echo -e "\e[0m"
@@ -50,12 +50,6 @@ echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
 echo "- .NET SDK $dotnetver"
 echo "- ASP.NET Runtime $dotnetver"
-echo ""
-echo -e "\e[1m----------------------------------------"
-echo -e "\e[0m"
-echo -e "Any suggestions or questions, email \e[1;4mpete@pjgcreations.co.uk"
-echo -e "\e[0mSend me a tweet \e[1;4m@pete_codes"
-echo -e "\e[0mTutorials on \e[1;4mhttps://www.petecodes.co.uk"
 echo ""
 echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
@@ -145,11 +139,11 @@ echo -e "\e[1m    Make Link Permanent"
 echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
 
-if grep -q 'export DOTNET_ROOT=' /home/pi/.bashrc;  then
+if grep -q 'export DOTNET_ROOT=' /home/plarpoon/.bashrc;  then
   echo 'Already added link to .bashrc'
 else
   echo 'Adding Link to .bashrc'
-  echo 'export DOTNET_ROOT=/opt/dotnet' >> /home/pi/.bashrc
+  echo 'export DOTNET_ROOT=/opt/dotnet' >> /home/plarpoon/.bashrc
 fi
 
 echo -e "\e[0m"
@@ -160,8 +154,8 @@ echo -e "\e[0m"
 
 cd ~
 
-wget -O /home/pi/dotnetdebug.sh https://raw.githubusercontent.com/pjgpetecodes/dotnet5pi/master/dotnetdebug.sh
-chmod +x /home/pi/dotnetdebug.sh 
+wget -O /home/plarpoon/dotnetdebug.sh https://raw.githubusercontent.com/pjgpetecodes/dotnet5pi/master/dotnetdebug.sh
+chmod +x /home/plarpoon/dotnetdebug.sh 
 
 echo -e "\e[0m"
 echo -e "\e[1m----------------------------------------"
